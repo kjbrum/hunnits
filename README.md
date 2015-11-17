@@ -5,7 +5,7 @@
 ## Install
 
 ```
-$ curl https://raw.githubusercontent.com/kjbrum/download-github-gists/master/hunnits > ~/bin/hunnits
+$ curl https://raw.githubusercontent.com/kjbrum/hunnits/master/hunnits > ~/bin/hunnits
 $ chmod +x ~/bin/hunnits
 ```
 
