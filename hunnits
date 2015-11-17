@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+# Hunnits
+# Make it rain hunnits.
+# Copyright (C) Kyle Brumm <http://kylebrumm.com>
+
+if [ "$1" = "-h" -o "$1" = "--help" ]; then cat <<EOF
+
+Hunnits
+
+Make it rain hunnits.
+
+Usage:
+    hunnits
+
+EOF
+exit; fi
+
+while [ 1 ]; do
+    rand=$(((RANDOM%25)+1))
+
+    while [ $rand -gt 0 ]; do
+        echo -en '\t'
+        rand=$((--rand))
+    done
+
+    echo "\$\$\$\$\$"
+    sleep 0.05
+done
