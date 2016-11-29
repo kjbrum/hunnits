@@ -17,7 +17,7 @@ EOF
 exit; fi
 
 while [ 1 ]; do
-    rand=$(((RANDOM%25)+1))
+    rand=$(((RANDOM%10)+1))
 
     while [ $rand -gt 0 ]; do
         echo -en '\t'
